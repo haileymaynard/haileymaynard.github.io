@@ -34,6 +34,19 @@ body{
     border-color: gold;
 }
 
+.img-thumbnail{
+	border-style: groove;
+    border-width: thin;
+    border-color: gold;
+	margin-bottom: 25px;
+}
+
+.caption{
+	margin: 0 auto;
+    width: fit-content;
+    display: block;
+}
+
 hr {
     border: 0;
     height: 2px;
