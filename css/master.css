@@ -47,6 +47,14 @@ body{
     display: block;
 }
 
+.jumbotron {
+      padding: 4rem 2rem;
+      margin-bottom: 2rem;
+      background-color: var(--bs-light);
+      border-radius: .3rem;  
+	background-size: cover;
+}
+
 hr {
     border: 0;
     height: 2px;
