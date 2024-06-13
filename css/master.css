@@ -1,6 +1,11 @@
 body{
 	background-color: white;
 }
+
+.row{
+	margin-bottom: calc(+1* var(--bs-gutter-x));
+}
+
 .navbar{
 	--bs-bg-opacity: 1;
     background-color: ivory !important;
@@ -34,11 +39,16 @@ body{
     border-color: gold;
 }
 
-.img-thumbnail{
+.thumbnail{
 	border-style: groove;
     border-width: thin;
     border-color: gold;
 	margin-bottom: 25px;
+}
+
+.thumbnail a img{
+	height: 21vh; /* 9 + 10 */
+	border-radius: var(--bs-border-radius) !important;
 }
 
 .caption{
@@ -47,13 +57,24 @@ body{
     display: block;
 }
 
-.jumbotron {
-      padding: 4rem 2rem;
-      margin-bottom: 2rem;
-      background-color: var(--bs-light);
-      border-radius: .3rem;  
-	background-size: cover;
+.jumbotron{
+	display: flex;
+    justify-content: center;
+    /* align-items: center; */	
+	max-height: 100vh;
+    overflow: hidden;
+	height: calc(100vh - 65px);
+	height: -o-calc(100vh - 65px); /* opera */
+    height: -webkit-calc(100vh - 65px); /* google, safari */
+    height: -moz-calc(100vh - 65px); /* firefox */
 }
+
+.jumbotron img{
+	flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%
+}
+
 
 hr {
     border: 0;
