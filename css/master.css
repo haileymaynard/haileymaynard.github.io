@@ -100,3 +100,11 @@ body{
      z-index: 1;
 }
  
+ .video {
+  max-width: 150vh;
+  margin: 0 auto;
+}
+video {
+  width: 100%;
+  display: block;
+}
